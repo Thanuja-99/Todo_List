@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="580.0" prefWidth="462.0" style="-fx-background-color: rgba(241, 196, 15,0.5);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TaskAddForm">
+   <children>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" height="517.0" layoutX="49.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="365.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#4a3b3b" height="52.0" layoutX="88.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Text fill="WHITE" layoutX="186.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buthanath Soorni" wrappingWidth="140.349609375">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="179.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="buthanathsoorni@gmail.com" />
+      <ImageView fitHeight="38.0" fitWidth="62.0" layoutX="134.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/man.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#fcf8f8" layoutX="88.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todo :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="304.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: rgba(0, 148, 50,1.0);" text="Add" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtTask" layoutX="123.0" layoutY="468.0" prefHeight="25.0" prefWidth="269.0" promptText="Add Task">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <CheckBox fx:id="chkOne" layoutX="91.0" layoutY="168.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkEight" layoutX="91.0" layoutY="429.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkSeven" layoutX="91.0" layoutY="389.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkSix" layoutX="91.0" layoutY="356.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkFive" layoutX="91.0" layoutY="313.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkFour" layoutX="91.0" layoutY="279.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkThree" layoutX="91.0" layoutY="247.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <CheckBox fx:id="chkTwo" layoutX="91.0" layoutY="210.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="16.0" />
+      <Button layoutX="90.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnMyDayOnAction" prefHeight="23.0" prefWidth="89.0" style="-fx-background-color: rgba(194, 54, 22,1.0);" text="My Day" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblOneTask" layoutX="124.0" layoutY="167.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblEightTask" layoutX="124.0" layoutY="428.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblSevenTask" layoutX="124.0" layoutY="388.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblSixTask" layoutX="124.0" layoutY="355.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblFiveTask" layoutX="124.0" layoutY="312.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblFourTask" layoutX="124.0" layoutY="278.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblThreeTask" layoutX="124.0" layoutY="246.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lblTwoTask" layoutX="124.0" layoutY="209.0" prefHeight="25.0" prefWidth="269.0" style="-fx-border-radius: 3; -fx-border-color: rgba(53, 59, 72,1.0);" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="200.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnFinshDayOnAction" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: rgba(48, 51, 107,1.0);" text="Finsh Day" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
